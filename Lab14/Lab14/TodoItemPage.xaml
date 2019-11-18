@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab14.TodoItemPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+            
+            <Label Text="DNI" />
+            <Entry Text="{Binding DNI}" />
+            <Label Text="Nombres" />
+            <Entry Text="{Binding nombres}" />
+            <Label Text="Apellidos" />
+            <Entry Text="{Binding apellidos}" />
+            <Label Text="Fecha Nac." />
+            <DatePicker Date="{Binding fecha}" />
+            <Label Text="Done" />
+            <Switch IsToggled="{Binding Done}" />
+            <Button Text="Save" Clicked="OnSaveClicked" />
+            <Button Text="Delete" Clicked="OnDeleteClicked" />
+            <Button Text="Cancel" Clicked="OnCancelClicked" />
+            <Button Text="Speak" Clicked="OnSpeakClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
